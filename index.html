@@ -4,12 +4,18 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-	
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="./css/J-style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
+
 	<title>Responsive Yoga Website</title>
 	<style>
 		* {
@@ -22,14 +28,92 @@
 
 <body>
 	<header>
-		<h1>Yoga</h1>
-		<nav>
-			<ul>
+
+		<style>
+			header h1 {
+				background: linear-gradient(to right, #FF52AF 0%, #9F53FF 100%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+			}
+
+			header a {
+				color: rgba(34, 9, 83, 1);
+				font-size: 16px;
+			}
+
+			footer p {
+				color: rgba(161, 151, 180, 1);
+			}
+
+			.submenu li {
+				padding: 3px;
+				margin-left: 10px;
+			}
+
+			footer i {
+				background: linear-gradient(to right, #FF52AF 0%, #9F53FF 100%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+			}
+		</style>
+		<nav id="nav-menu">
+			<input type="checkbox" id="checkbox-2" style="display: none;">
+			<label for="checkbox-2" id="checkbox-label-2" role="button" aria-label="Toggle navigation menu"
+				aria-controls="nav-menu" aria-expanded="false">
+				<img id="i-grid" src="./assets/images/ri_apps-2-line.png" alt="Menu-icon">
+			</label>
+			<input type="checkbox" id="checkbox" style="display: none;">
+			<label for="checkbox" id="checkbox-label" role="button" aria-label="Toggle Dark mode"
+				aria-controls="Dark mode" aria-expanded="false">
+				<i class="fa-regular fa-moon fa-lg" style="color: #220953;"></i>
+			</label>
+			<ul id="menu">
 				<li><a href="#">Home</a></li>
-				<li><a href="#">Service 1</a></li>
-				<li><a href="#">Service 2</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="#">Service 1</a>
+					<ul class="submenu">
+						<li><a href="#">Option 1</a></li>
+						<li><a href="#">Option 2</a></li>
+						<li><a href="#">Option 3</a></li>
+						<li><a href="#">Option 4</a></li>
+						<li><a href="#">Option 5</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Service 2</a>
+					<ul class="submenu">
+						<li><a href="#">Option 1</a></li>
+						<li><a href="#">Option 2</a></li>
+						<li><a href="#">Option 3</a></li>
+						<li><a href="#">Option 4</a></li>
+						<li><a href="#">Option 5</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Contact</a>
+					<ul class="submenu">
+						<li><a href="#">Option 1</a></li>
+						<li><a href="#">Option 2</a></li>
+						<li><a href="#">Option 3</a></li>
+						<li><a href="#">Option 4</a></li>
+						<li><a href="#">Option 5</a></li>
+					</ul>
+				</li>
+
 			</ul>
+			<h1>Yoga</h1>
+			<div id="menu-2">
+				<input type="checkbox" id="checkbox-3" style="display: none;">
+				<label for="checkbox-2" id="checkbox-label-3" role="button" aria-label="Toggle mobil menu"
+					aria-controls="mobile menu" aria-expanded="false">
+					<i class="fa-solid fa-xmark" style="color: #220953; position: absolute; right: 48px; "></i>
+				</label>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Healt</a></li>
+					<li><a href="#">Place</a></li>
+					<li><a href="#">Follow</a></li>
+				</ul>
+			</div>
 		</nav>
 	</header>
 	<main>
@@ -59,12 +143,12 @@
 			</section>
 		</section>
 
-		<section id="2-section">
+		<section id="section-2">
 			<div>
-				<h1>#01</h1>
+				<h2>#01</h2>
 			</div>
 			<div>
-				<img src="./assets/images/ho-yoga.png" alt="Yoga Pose">
+				<img src="./assets/images/list-yoga.png" alt="Yoga Pose">
 			</div>
 			<div>
 				<p>Get a list of specific influencers in your niche at your fingertips so you can focus on managing your
@@ -75,21 +159,28 @@
 			</div>
 		</section>
 
-		<section id="3-section">
-			<div>
-				<div>
+		<section id="section-3">
+			<div id="container-3-1">
+				<div id="hearth-rate">
+					<div id="heart">
+						<i class="fa-solid fa-heart fa-xl"
+							style="color: #ff0000; position: absolute; left: 18px; top: 29px;"></i>
+					</div>
 					<p>Heart Rate</p>
-					<p>168 bmp</p>
+					<p style="background: linear-gradient(to right, #FF52AF 0%, #9F53FF 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+					background-clip: text;">168 bmp</p>
 				</div>
-				<div>
-					<p>500 +</p>
+				<div id="free-courses">
+					<p style="background: linear-gradient(to right, #FF52AF 0%, #9F53FF 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+					background-clip: text;">500 +</p>
 					<p>Free Courses</p>
 				</div>
-				<img src="./assets/images/health-fitness.png" alt="Yoga Man">
+				<img style="width: 500px;" src="./assets/images/health-fitness.png" alt="Yoga Man">
 			</div>
-			<div>
+			<div id="container-3-2">
 				<h2>Bring Happiness To Good Health!</h2>
-				<p>If you take care of your good health, take care of your mentality and lead a healthy life with
+				<p>If you take care of your good health, take care of your mentality and
+					lead a healthy life with
 					positive thoughts every day.</p>
 				<button>Let's Start &#8594;</button>
 			</div>
@@ -152,7 +243,7 @@
 				<button>Suscribe &#8594;</button>
 			</div>
 		</section>
-		
+
 	</main>
 
 	<footer>
@@ -182,13 +273,13 @@
 		<hr>
 		<section id="second">
 			<div class="social">
-				<i></i>
-				<i></i>
-				<i></i>
-				<i></i>
+				<i class="fa-brands fa-facebook"></i>
+				<i class="fa-brands fa-instagram"></i>
+				<i class="fa-brands fa-twitter"></i>
+				<i class="fa-brands fa-youtube"></i>
 			</div>
 			<div class="copy">
-				<p>&copy; Copyright Bedimcode. All rights reserved</p>
+				<p id="copy-text">&copy; Copyright Bedimcode. All rights reserved</p>
 			</div>
 		</section>
 	</footer>

@@ -1,0 +1,345 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    font-weight: normal;
+    font-family:  "Poppins", sans-serif;
+}
+body{
+    background-color: rgba(245, 240, 255, 1);
+}
+h2{
+    font-size: 64px;
+    color: rgba(34, 9, 83, 1);
+    font-weight: lighter;
+    font-family: "Lora", serif;
+}
+h3, h4,h1{
+    font-family: "Lora", serif;
+}
+
+p{
+    color: rgba(75, 62, 101, 1);
+}
+button{
+    background: linear-gradient(to right, #FF52AF 0%, #9F53FF 100%);
+    color: white;
+    border: none;
+    border-radius: 64px;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+/*Header config*/
+header{
+    padding: 23px;
+    padding-right: 161px;
+    padding-left: 161px;
+}
+#nav-menu{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+header ul{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-right: 290px;
+    margin-left: 290px;
+}
+#i-grid{
+    display: none;
+}
+
+#menu li a:hover,
+#menu-2 li a:hover {
+	background: linear-gradient(to right, #FF52AF 0%, #9F53FF 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	background-clip: text;
+			
+}
+
+#menu{
+    position: relative;
+}
+#menu li:hover .submenu{
+    display: block;
+}
+
+#menu-2{
+    position: fixed;
+    top: 0px;
+    left: -120%;
+    width: 100vw;
+    height: 100dvh;
+    text-align: center;
+    z-index: 2;
+    transition: all 0.5s;
+    background-color: rgba(255, 255, 255, 1);
+    display: block;
+    padding: 48px 0px;
+    color: #FF52AF;
+  }
+/*submenu config*/
+.submenu{
+    display: none;
+    background-color: white;
+    position: absolute;
+    min-width: 89px;
+}
+.submenu a{
+    color: rgba(34, 9, 83, 1)
+}
+/*section 3 config*/
+#section-3{
+    height: 679px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    position: relative;
+    
+}
+#container-3-2 h2,
+#container-3-2 p{
+    margin-bottom: 50px;
+}
+#container-3-1{
+    width: 500px;
+    height: 582px;
+    position: relative;
+    left: 164px;
+}
+#container-3-2{
+    width: 579px;
+    height: 340px;
+    position: absolute;
+    top: 122px;
+    left: 696px;
+    width: 579px;
+}
+#hearth-rate{
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(75, 62, 101, 1);
+    border-radius: 12px;
+    width: 168px;
+    position: absolute;
+    top: 73px;
+    left: 8px;
+    padding: 8px;
+}
+#heart{
+    float: left;
+    background-color:rgba(255, 230, 229, 1);
+    height: 45px;
+    width: 45px;
+    border-radius: 100px;
+    display: block;
+    margin-right: 7px;
+}
+#free-courses{
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(75, 62, 101, 1);
+    width: 129px;
+    border-radius: 12px;
+    position: absolute;
+    top: 487px;
+    left: 340px;
+    padding: 12px;
+}
+/*footer config*/
+footer{
+    background-color: rgba(30, 8, 73, 1);
+    padding-top: 64px;
+    padding-bottom: 64px;
+    position: relative;
+    height: 391px;
+}
+footer .hero{
+    width: 244px;
+    position: absolute;
+    left: 160px;
+}
+footer .hero h3{
+	background: linear-gradient(to right, #FF52AF 0%, #9F53FF 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	background-clip: text;
+	margin-bottom: 40px;
+	font-size: 24px;
+ }
+footer .info{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 674px;
+    gap: 100px;
+}
+footer hr{
+    position: absolute;
+    top: 255px;
+    left: 160px;
+    width: 1120px;
+    border-color: white;
+}
+footer h4 {
+	color: white;
+	font-size: 24px;
+    margin-bottom: 40px;
+}
+footer .copy{
+    position: absolute;
+    left: 999px;
+    top: 303px;
+}
+footer .social{
+    display: flex;
+	gap: 14px;
+    position: absolute;
+    left: 160px;
+    top: 303px;
+}
+@media (max-width: 480px) {
+    *{
+        text-align: center;
+        align-items: center;
+    }
+    h2{
+        font-size: 32px;
+    }
+  /*header*/
+   header{
+        padding: 15px 24px;
+    }
+    #menu{
+        display: none;
+    }
+    #i-grid{
+    display: block;
+    }
+    h1{
+        margin-right: 260px;
+    }
+    #nav-menu{
+        justify-content: flex-end;
+        gap: 30px;
+    }
+    #checkbox-2:checked ~ #menu-2 {
+        left: 0px;
+    }
+    #checkbox-3:checked ~ #menu-2 {
+        left: -50%;
+        transition: all 0.5s;
+    }
+    #menu-2 ul{
+        font-size: 15px;
+        padding: 24px 0px;
+        display: block;
+        width: 50px;
+        margin-left: 48px;
+    }
+    #menu-2 li{
+        padding: 24px 0px;
+        
+    }
+    /*section-3 */
+
+    #section-3{
+        flex-direction: column-reverse;
+        height: 730px;
+        margin: 32px 0px;
+        padding: 0px;
+    }
+    #section-3 img{
+        max-width: 320px;
+        position: relative;
+        margin: 0;
+    }
+    #container-3-1{
+        position: static;
+    }
+    #container-3-2{
+        position: static;
+        display: flex;
+        flex-direction: column;
+        margin: 0px 30px 31px 30px;
+        width: 331px;
+        height: 263px;
+    }
+    #container-3-2 h2,
+    #container-3-2 p{
+        margin-bottom: 28px;
+    }
+    
+    #hearth-rate{
+        top: 366px;
+        z-index: 3;
+        left: 36px;
+        height: 54px;
+        width: 138px;
+        font-size: 13px;
+    }
+    #free-courses{
+        top: 580px;
+        left: 275px;
+       width: 109px;
+       height: 54px;
+       padding: 8px;
+    }
+    #free-courses p{
+        text-align: left;
+        font-size: 12px;
+    }
+    /*footer*/
+    footer{
+        height: 753px;
+        display: flex;
+    }
+    footer p,
+    footer h4,
+    footer h3{
+        text-align: left;
+    }
+    footer .hero{
+        left: 24px;
+        top: 48px;
+    }
+    footer .info{
+        left: 24px;
+        top: 203px;
+        flex-direction: column;
+        gap: 40px;
+    }
+   footer hr{
+    top: 603px;
+    left: 64px;
+    width: 328px;
+   }  
+   footer h4,
+   footer h3{
+    margin-bottom: 20px;
+    font-size: 20px;
+   }
+   footer p{
+    font-size: 15px;
+   }
+   footer .hero h3{
+    margin-bottom: 20px;
+   }
+   footer .social{
+    top: 640px;
+    left: 160px;
+   }
+   footer .social i{
+    width: 24px;
+   }
+   footer .copy{
+    top: 703px;
+    left: 102px;
+   }
+   footer #copy-text{
+    font-size: 12px;
+   }
+}
