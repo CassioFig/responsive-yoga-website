@@ -73,9 +73,9 @@ header ul{
     top: 0px;
     left: -120%;
     width: 100vw;
-    height: 100dvh;
+    height: 100%;
     text-align: center;
-    z-index: 2;
+    z-index: 1000;
     transition: all 0.5s;
     background-color: rgba(255, 255, 255, 1);
     display: block;
@@ -224,7 +224,7 @@ footer .social{
     }
     #nav-menu{
         justify-content: flex-end;
-        gap: 30px;
+        gap: 10px;
     }
     #checkbox-2:checked ~ #menu-2 {
         left: 0px;

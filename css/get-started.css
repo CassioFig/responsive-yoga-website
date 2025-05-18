@@ -1,0 +1,205 @@
+:root {
+	--title-color: #220953;
+	--text-color: #4B3E65;
+	--white-color: #ffffff;
+	--gradient-color: linear-gradient(to right, #FF52AF 0%, #9F53FF 100%);
+}
+
+main section.get-start {
+	display: flex;
+	margin-left: 124px;
+	height: 575px;
+}
+
+main section.get-start div#first {
+	flex: 0 0 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+main section.get-start div#second {
+	flex: 0 0 60%;
+	display: flex;
+	justify-content: center;
+}
+
+main section.get-start div#first {
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px;
+}
+
+main section.get-start div#first h2 {
+	font-family: "Lora", serif;
+	color: var(--title-color);
+	font-size: 64px;
+	font-weight: 400;
+}
+
+main section.get-start div#first p {
+	font-family: "Poppins", sans-serif;
+	color: var(--text-color);
+	font-size: 16px;
+	width: 90%;
+}
+
+main section.get-start div#first button {
+	width: fit-content;
+	padding: 15px 28px;
+	border-radius: 64px;
+	border: none;
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	color: var(--white-color);
+	background: var(--gradient-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+}
+
+main section.get-start div#second figure {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+
+main section.get-start div#second figure .image-container {
+	position: relative;
+}
+
+main section.get-start div#second figure img:nth-child(1) {
+	position: absolute;
+	top: 0px;
+	right: -100px;
+	z-index: 2;
+}
+
+main section.get-start div#second figure img:nth-child(2) {
+	position: absolute;
+	bottom: 0;
+	left: -300px;
+	z-index: 1;
+}
+
+.get-start #second .small-card {
+	position: absolute;
+	z-index: 3;
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	background-color: var(--white-color);
+	padding: 12px 8px;
+	border-radius: 16px;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.get-start #second .small-card p {
+	background-image: var(--gradient-color);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: transparent;
+}
+
+.get-start #second .small-card i {
+	background-image: var(--gradient-color);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: transparent;
+	font-size: 26.67px;
+}
+
+.get-start #second .small-card#one {
+	top: 16%;
+	right: 32%;
+}
+
+.get-start #second .small-card#two {
+	top: 81%;
+	right: 67%;
+}
+
+@media (max-width: 480px) {
+	main section.get-start {
+		margin: 0px 25px;
+		flex-direction: column;
+		height: 376px;
+	}
+
+	main section.get-start div#first {
+		flex: 0 0 100%;
+		align-items: center;
+		padding: 0px 16px;
+		text-align: center;
+		row-gap: 20px;
+	}
+
+	main section.get-start div#first h2 {
+		font-size: 32px;
+		text-align: center;
+	}
+
+	main section.get-start div#first p {
+		width: 100%;
+		font-size: 15px;
+		text-align: center;
+	}
+
+	main section.get-start div#second {
+		flex: 0 0 100%;
+	}
+
+	main section.get-start div#second figure {
+		flex-direction: column;
+	}
+
+	main section.get-start div#second img {
+		width: 250px;
+		height: 171px;
+	}
+
+	main section.get-start div#second figure img:nth-child(1) {
+		top: -210px;
+		right: 0px;
+		left: -165px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	main section.get-start div#second figure img:nth-child(2) {
+		top: -93px;
+		right: 0px;
+		left: -100px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.get-start #second .small-card {
+		font-size: 13px;
+	}
+
+	.get-start #second .small-card i {
+		font-size: 20px;
+	}
+
+	.get-start #second .small-card#one {
+		top: 0%;
+		right: 0%;
+		width: 170px;
+		left: -30px;
+	}
+
+	.get-start #second .small-card#two {
+		top: 53%;
+		right: 0px;
+		width: 170px;
+		left: -150px;
+	}
+}
