@@ -38,13 +38,32 @@
 		.darkmode-icon::before {
 			content: "\f186";
 		}
-
+		/*dark mode*/
 		body:has(#checkbox:checked) {
 			background-color: var(--d-bg-color);
 
 			.darkmode-icon::before {
 				content: "\f185";
 			}
+			#checkbox-label{
+				color: rgba(255, 255, 255, 1);
+			}
+			h2{
+				color: rgba(209, 192, 241, 1);
+			}
+			p{
+				color: rgba(160, 148, 184, 1);
+			}
+			#menu a{
+				color: rgba(209, 192, 241, 1);
+			}
+			#hearth-rate, #free-courses{
+				background-color: rgba(55, 42, 81, 1);
+			}
+			footer{
+				background-color: rgba(20, 9, 42, 1);
+			}
+
 		}
 	</style>
 </head>

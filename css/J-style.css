@@ -339,3 +339,9 @@ footer .social{
     font-size: 12px;
    }
 }
+/*Dark mode*/
+body:has(#checkbox:checked) {
+    #menu li{
+        color: rgba(255, 255, 255, 1);
+    }
+}
