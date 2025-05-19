@@ -3,6 +3,14 @@
 	--text-color: #4B3E65;
 	--white-color: #ffffff;
 	--gradient-color: linear-gradient(to right, #FF52AF 0%, #9F53FF 100%);
+
+	--d-title-color: #D1C0F1;
+	--d-text-color: #A094B8;
+}
+
+body:has(#checkbox:checked) {
+	--title-color: var(--d-title-color);
+	--text-color: var(--d-text-color);
 }
 
 main section.get-start {
@@ -97,6 +105,10 @@ main section.get-start div#second figure img:nth-child(2) {
 	display: flex;
 	align-items: center;
 	gap: 8px;
+}
+
+body:has(#checkbox:checked) .get-start #second .small-card {
+	background-color: #372A51;
 }
 
 .get-start #second .small-card p {

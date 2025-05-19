@@ -26,8 +26,25 @@
 			box-sizing: border-box;
 		}
 
+		:root {
+			--l-bg-color: #F5F0FF;
+			--d-bg-color: #14092A;
+		}
+
 		body {
-			background-color: #F5F0FF;
+			background-color: var(--l-bg-color);
+		}
+
+		.darkmode-icon::before {
+			content: "\f186";
+		}
+
+		body:has(#checkbox:checked) {
+			background-color: var(--d-bg-color);
+
+			.darkmode-icon::before {
+				content: "\f185";
+			}
 		}
 	</style>
 </head>
@@ -73,7 +90,7 @@
 			<input type="checkbox" id="checkbox" style="display: none;">
 			<label for="checkbox" id="checkbox-label" role="button" aria-label="Toggle Dark mode" aria-controls="Dark mode"
 				aria-expanded="false">
-				<i class="fa-regular fa-moon fa-lg" style="color: #220953;"></i>
+				<i class="fa-regular fa-lg darkmode-icon"></i>
 			</label>
 			<ul id="menu">
 				<li><a href="#">Home</a></li>
@@ -246,18 +263,19 @@
 				</figure>
 			</div>
 		</section>
-<!-- Made some changes to this section -->
+		<!-- Made some changes to this section -->
 		<section id="section6">
-  <div class="newsletter">
-    <h2>Join our newsletter</h2>
-    <p>Subscribe to our newsletter to be aware of many things on discounts, gifts, training and much more. Just enter your email.</p>
-    <div class="newsletter-form">
-      <input type="email" placeholder="For latest update send mail" />
-      <button>Subscribe</button>
-    </div>
-  </div>
-</section>
-		
+			<div class="newsletter">
+				<h2>Join our newsletter</h2>
+				<p>Subscribe to our newsletter to be aware of many things on discounts, gifts, training and much more. Just
+					enter your email.</p>
+				<div class="newsletter-form">
+					<input type="email" placeholder="For latest update send mail" />
+					<button>Subscribe</button>
+				</div>
+			</div>
+		</section>
+
 	</main>
 
 	<footer>
