@@ -1,5 +1,15 @@
 /* General settings */
 
+body:has(#checkbox:checked)  {
+  #section2 p {
+    color: #A094B8;
+  }
+
+  #section2 .section2-image {
+    background-image: url("../assets/images/darkmode.png");
+  }
+}
+
 
 #section2 {
   display: flex;
@@ -14,6 +24,7 @@
   padding: 20px 10px 0 60px;
   width: 100%;
   max-width: 500px;
+  color: #4B3E65;
 }
 
 #section2 #nextb {
@@ -22,11 +33,14 @@
   padding: 0 0 0 5px;
 }
 
-#section2 img {
+#section2 .section2-image {
   width: 100%;
   max-width: 536px;
-  height: auto;
+  height: 230px;
   padding-left: 50px;
+  background-image: url("../assets/images/Box_group_list.png");
+  background-size: cover;
+  background-position: center;
 }
 
 
@@ -152,10 +166,10 @@
     max-width: 100%;
   }
 
-  #section2 img {
+  #section2 .section2-image {
     padding-left: 0;
-    width: 100%;
-    max-width: 100%;
+    width: 307px;
+    height: 125px;
   }
 
   #section2 #nextb {
